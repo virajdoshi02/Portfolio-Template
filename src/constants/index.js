@@ -13,7 +13,6 @@ import {
   nodejs,
   git,
   figma,
-  docker,
   postgresql,
   rubyrails,
   graphql,
@@ -22,7 +21,6 @@ import {
   math,
   movie,
   nyeusi,
-  space,
   coverhunt,
   dcc,
   kelhel,
@@ -46,225 +44,146 @@ export const navLinks = [
 
 const services = [
   {
-    title: 'Frontend Developer',
+    title: 'Extensive experience in Unity C#',
     icon: frontend,
   },
   {
-    title: 'Backend Developer',
+    title: 'Game design Level design Writing',
     icon: backend,
   },
   {
-    title: 'UI/UX Design',
+    title: 'Game systems design in Unity, Godot, PyGame and many others',
     icon: ux,
   },
   {
-    title: 'Software Prototyping',
+    title: 'Iterative design Prototyping Playtesting Working ',
     icon: prototyping,
-  },
+  }, 
 ];
 
 const technologies = [
   {
-    name: 'HTML 5',
+    name: 'Unity',
     icon: html,
   },
   {
-    name: 'CSS 3',
-    icon: css,
-  },
-  {
-    name: 'JavaScript',
-    icon: javascript,
-  },
-  {
-    name: 'TypeScript',
+    name: 'Godot',
     icon: typescript,
   },
   {
-    name: 'React JS',
-    icon: reactjs,
+    name: 'PyGame',
+    icon: tailwind,
+  },
+  { 
+    name: 'C',
+    icon: postgresql,
   },
   {
-    name: 'Redux Toolkit',
+    name: 'C#',
+    icon: css,
+  }, 
+  {
+    name: 'C++',
+    icon: figma,
+  },
+  {
+    name: 'Python',
     icon: redux,
   },
   {
-    name: 'Tailwind CSS',
-    icon: tailwind,
-  },
-  {
-    name: 'Node JS',
+    name: 'Java',
     icon: nodejs,
   },
   {
-    name: 'Rails',
+    name: 'Java Swing',
     icon: rubyrails,
   },
   {
-    name: 'graphql',
+    name: 'OpenGL',
+    icon: javascript,
+  },
+  {
+    name: 'Photoshop',
     icon: graphql,
   },
   {
-    name: 'postgresql',
-    icon: postgresql,
+    name: 'Android Studio',
+    icon: reactjs,
   },
   {
     name: 'git',
     icon: git,
   },
-  {
-    name: 'figma',
-    icon: figma,
-  },
-  {
-    name: 'docker',
-    icon: docker,
-  },
 ];
 
 const experiences = [
   {
-    title: 'Front-End Developer',
-    company_name: 'Cover Hunt',
-    icon: coverhunt,
-    iconBg: '#333333',
-    date: 'Aug 2021 - Feb 2022',
+    id: 'project-1',
+    name: '2D Dungeon generator',
+    description: 'I created a 2D random dungeon generator in Godot using MSTs and some other graph theory',
+    tags: [
+    ],
+    image: typescript,
+    repo: 'https://github.com/virajdoshi02/2DRandomDungeon',
   },
   {
-    title: 'Mentor (Volunteer)',
-    company_name: 'Microverse',
-    icon: microverse,
-    iconBg: '#333333',
-    date: 'Mar 2022 - May 2022',
+    id: 'project-2',
+    name: 'Fixed shooter',
+    description:
+      'A Space Invaders-inspired fixed shooter created using Java, and displayed using Swing',
+    tags: [
+    ],
+    image: rubyrails,
+    repo: 'https://github.com/virajdoshi02/SpaceShooter',
   },
   {
-    title: 'Junior Software Engineer',
-    company_name: 'Kelhel',
-    icon: kelhel,
-    iconBg: '#333333',
-    date: 'May 2022 - Oct 2022',
-  },
-  {
-    title: 'Full Stack Developer',
-    company_name: 'Diversity Cyber Council',
-    icon: dcc,
-    iconBg: '#333333',
-    date: 'Sep 2022 - Present',
+    id: 'project-3',
+    name: 'Orb Monster Minigame',
+    description: 'I am part of UPGRADE, a game dev club at UPenn, and I created one of the minigames minigame for our Gatcha Game',
+    tags: [
+    ],
+    image: html,
+    repo: 'https://github.com/virajdoshi02/OrbMinigame',
   },
 ];
 
 const projects = [
   {
     id: 'project-1',
-    name: 'KomiKult',
-    description: 'A comic characters list app that displays Marvel characters.',
+    name: 'Godot ARPG',
+    description: 'A Zelda-inspired top-down ARPG created in Godot.',
     tags: [
-      {
-        name: 'react',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'mongodb',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'tailwind',
-        color: 'pink-text-gradient',
-      },
     ],
-    image: komikult,
-    repo: 'https://github.com/shaqdeff/KomiKult',
-    demo: 'https://shaqdeff.github.io/KomiKult/',
+    image: typescript,
+    repo: 'https://github.com/virajdoshi02/TDRPG',
   },
   {
     id: 'project-2',
-    name: 'Leaderboard',
+    name: 'Homefront',
     description:
-      'A leaderboard list app that displays scores submitted by different players.',
+      'A sci-fi FPS with unique intellectual challenges sprinkled in: Coding Questions',
     tags: [
-      {
-        name: 'react',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'restapi',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'scss',
-        color: 'pink-text-gradient',
-      },
     ],
-    image: leaderboard,
-    repo: 'https://github.com/shaqdeff/Leaderboard',
-    demo: 'https://shaqdeff.github.io/Leaderboard/',
+    image: html,
+    repo: 'https://github.com/virajdoshi02/HomefrontFPS',
   },
   {
     id: 'project-3',
-    name: 'Math Magicians',
-    description: 'This is a single-page calculator app built with React',
+    name: 'Edu game for CHOP',
+    description: 'This is an educational game for children with down syndrome I created whilst contracted with the Children\'s Hospital of Philadelphia',
     tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
     ],
-    image: math,
-    repo: 'https://github.com/shaqdeff/Math-Magicians',
-    demo: 'https://inspiring-medovik-37d3b3.netlify.app/',
+    image: html,
+    repo: 'https://github.com/virajdoshi02/CHOPGame',
   },
   {
     id: 'project-4',
-    name: 'Movie Metro',
-    description: `A single-page application that allows users to search for any movie or show's ratings and its details.`,
+    name: 'Botanic Defenders',
+    description: `With a few members of my club, I created a plant-themed multiplayer tower defence game in Unity`,
     tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
     ],
-    image: movie,
-    repo: 'https://github.com/shaqdeff/Movie-Metro',
-    demo: 'https://movie-metro.netlify.app/',
-  },
-  {
-    id: 'project-5',
-    name: 'Nyeusi Fest Site',
-    description:
-      'This is a demo concert website for a music festival called Nyeusi.',
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: nyeusi,
-    repo: 'https://github.com/shaqdeff/Nyeusi-Fest-Site',
-    demo: 'https://shaqdeff.github.io/Nyeusi-Fest-Site/',
+    image: html,
+    repo: 'https://github.com/virajdoshi02/BotanicDefendersGame',
   },
 ];
 

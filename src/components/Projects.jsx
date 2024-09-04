@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { SectionWrapper } from '../hoc';
 import { styles } from '../styles';
 import { github, pineapple, pineappleHover } from '../assets';
-import { projects } from '../constants';
+import { projects, experiences } from '../constants';
 import { fadeIn, textVariant, staggerContainer } from '../utils/motion';
 
 const ProjectCard = ({
@@ -29,12 +29,11 @@ const ProjectCard = ({
         className="absolute top-0 left-0 z-10 bg-jetLight 
       h-full w-full opacity-[0.5] rounded-[24px]"></div>
 
-      <img
+ <img
         src={image}
         alt={name}
         className="absolute w-full h-full object-cover rounded-[24px]"
       />
-
       {active !== id ? (
         <div className="flex items-center justify-start pr-[4.5rem]">
           <h3
@@ -75,34 +74,7 @@ const ProjectCard = ({
               font-poppins tracking-[1px]">
               {description}
             </p>
-            <button
-              className="live-demo flex justify-between 
-              sm:text-[16px] text-[14px] text-timberWolf 
-              font-bold font-beckman items-center py-5 pl-2 pr-3 
-              whitespace-nowrap gap-1 sm:w-[138px] sm:h-[50px] 
-              w-[125px] h-[46px] rounded-[10px] glassmorphism 
-              sm:mt-[22px] mt-[16px] hover:bg-battleGray 
-              hover:text-eerieBlack transition duration-[0.2s] 
-              ease-in-out"
-              onClick={() => window.open(demo, '_blank')}
-              onMouseOver={() => {
-                document
-                  .querySelector('.btn-icon')
-                  .setAttribute('src', pineappleHover);
-              }}
-              onMouseOut={() => {
-                document
-                  .querySelector('.btn-icon')
-                  .setAttribute('src', pineapple);
-              }}>
-              <img
-                src={pineapple}
-                alt="pineapple"
-                className="btn-icon sm:w-[34px] sm:h-[34px] 
-                  w-[30px] h-[30px] object-contain"
-              />
-              LIVE DEMO
-            </button>
+            
           </div>
         </>
       )}
@@ -116,19 +88,16 @@ const Projects = () => {
   return (
     <div className="-mt-[6rem]">
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>Case Studies</p>
-        <h2 className={`${styles.sectionHeadTextLight}`}>Projects.</h2>
+        <p className={`${styles.sectionSubText} `}>My Works</p>
+        <h2 className={`${styles.sectionHeadTextLight}`}>Projects</h2>
       </motion.div>
 
       <div className="w-full flex">
         <motion.p
           variants={fadeIn('', '', 0.1, 1)}
           className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
-          These projects demonstrate my expertise with practical examples of
-          some of my work, including brief descriptions and links to code
-          repositories and live demos. They showcase my ability to tackle
-          intricate challenges, adapt to various technologies, and efficiently
-          oversee projects.
+          These are some of the projects that I have worked on. They showcase my wide range when it comes to design and development, 
+          and are also proof of the efforts I have taken in order to improve in this field.
         </motion.p>
       </div>
 
@@ -150,6 +119,45 @@ const Projects = () => {
           ))}
         </div>
       </motion.div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+      <div className="-mt-[6rem]">
+      <motion.div variants={textVariant()}>
+        <h2 className={`${styles.sectionHeadTextLight}`}>Mini Projects</h2>
+      </motion.div>
+
+      <div className="w-full flex">
+        <motion.p
+          variants={fadeIn('', '', 0.1, 1)}
+          className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
+          I also have a few mini-projects, which are some of my smaller undertakings and experiments.
+        </motion.p>
+      </div>
+
+
+      <motion.div
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
+        className={`${styles.innerWidth} mx-auto flex flex-col`}>
+        <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
+          {experiences.map((project, index) => (
+            <ProjectCard
+              key={project.id}
+              index={index}
+              {...project}
+              active={active}
+              handleClick={setActive}
+            />
+          ))}
+        </div>
+      </motion.div>
+    </div>
     </div>
   );
 };
