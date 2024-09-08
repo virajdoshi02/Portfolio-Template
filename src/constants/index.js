@@ -44,7 +44,7 @@ export const navLinks = [
 
 const services = [
   {
-    title: 'Extensive experience in Unity C#',
+    title: 'Extensive experience in Unity C#, UE 5',
     icon: frontend,
   },
   {
@@ -52,7 +52,7 @@ const services = [
     icon: backend,
   },
   {
-    title: 'Game systems design in Unity, Godot, PyGame and many others',
+    title: 'Game systems design in Unity, UE 5, Godot, PyGame etc',
     icon: ux,
   },
   {
@@ -65,6 +65,10 @@ const technologies = [
   {
     name: 'Unity',
     icon: html,
+  },
+  {
+    name: 'Unity',
+    icon: komikult,
   },
   {
     name: 'Godot',
@@ -145,9 +149,36 @@ const experiences = [
     image: html,
     repo: 'https://github.com/virajdoshi02/OrbMinigame',
   },
+  {
+    id: 'project-4',
+    name: 'Botanic Defenders',
+    description: `With a few members of my club, I created a plant-themed multiplayer tower defence game in Unity`,
+    tags: [
+    ],
+    image: html,
+    repo: 'https://github.com/virajdoshi02/BotanicDefendersGame',
+  },
 ];
 
 const projects = [
+  {
+    id: 'project-4',
+    name: 'RPG in UE 5',
+    description: `My first serious attempt at creating a game in UE 5. I am creating a basic RPG inspired by the AC franchise.`,
+    tags: [
+    ],
+    image: komikult,
+    repo: 'https://github.com/virajdoshi02/RPG',
+  },
+  {
+    id: 'project-5',
+    name: 'Mini Minecraft',
+    description: `I created an imitation of Minecraft from scratch using C++ and GLSL along with two friends. Mostly worked on procedural generation, post-processing pipeline and shaders.`,
+    tags: [
+    ],
+    image: figma,
+    repo: 'https://github.com/virajdoshi02/mini-minecraft',
+  },
   {
     id: 'project-1',
     name: 'Godot ARPG',
@@ -175,15 +206,6 @@ const projects = [
     ],
     image: html,
     repo: 'https://github.com/virajdoshi02/CHOPGame',
-  },
-  {
-    id: 'project-4',
-    name: 'Botanic Defenders',
-    description: `With a few members of my club, I created a plant-themed multiplayer tower defence game in Unity`,
-    tags: [
-    ],
-    image: html,
-    repo: 'https://github.com/virajdoshi02/BotanicDefendersGame',
   },
 ];
 
