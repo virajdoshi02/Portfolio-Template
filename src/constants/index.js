@@ -142,12 +142,12 @@ const experiences = [
   },
   {
     id: 'project-3',
-    name: 'Orb Monster Minigame',
-    description: 'I am part of UPGRADE, a game dev club at UPenn, and I created one of the minigames minigame for our Gatcha Game',
+    name: 'Procedural city in UE 5',
+    description: 'I created a procedural city in UE 5 using Houdini and Blueprints for a school project',
     tags: [
     ],
-    image: html,
-    repo: 'https://github.com/virajdoshi02/OrbMinigame',
+    image: komikult,
+    repo: 'https://github.com/virajdoshi02/5660FinalProj',
   },
   {
     id: 'project-4',
