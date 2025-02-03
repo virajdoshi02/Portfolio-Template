@@ -158,6 +158,16 @@ const experiences = [
     image: html,
     repo: 'https://github.com/virajdoshi02/BotanicDefendersGame',
   },
+  {
+    id: 'project-5',
+    name: 'JWalker Rally 2k25',
+    description: `Created during UPGRADE's 2024 Halloween Game Jam, this is a rally game where you play as a spectator. Playable in browser.`,
+    tags: [
+    ],
+    image: html,
+    repo: 'https://github.com/virajdoshi02/jwalker-rally-2k25',
+  },
+
 ];
 
 const projects = [
